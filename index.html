@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- first part -->
+    <section>
+        <h1 class="text-3xl text-center mt-5">
+            Welcome To My Awesome Count App 🤪
+        </h1>
+        <div class="text-center">
+            <h1 id="count" class="my-5 text-3xl font-bold">0</h1>
+            <button onclick="clickMe()" class="btn btn-primary text-2xl font-extrabold">
+                +
+            </button>
+            <button id="minus_btn" class="btn btn-success text-2xl font-extrabold">-</button>
+        </div>
+    </section>
+    <!-- seconde part -->
+    <section>
+        <h1 class="text-3xl text-center my-5">Goriber Evaly Rebooted 2.0 🛍</h1>
+    <div class="w-[80%] text-center mx-auto mb-8">
+      <textarea
+        id="text_area"
+        placeholder="leave a review.."
+        class="textarea mx-auto textarea-bordered textarea-lg w-96"
+      ></textarea>
+      <div class="mt-4 w-[45%] mx-auto">
+        <button id="submit_btn" class="btn btn-success btn-sm">Submit</button>
+      </div>
+    </div>
+    <div id="review" class="user-review w-96 mx-auto">
+      <h1 class="text-3xl font-bold text-red-600">User Review...</h1>
+    </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
